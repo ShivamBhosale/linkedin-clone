@@ -1,7 +1,7 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 import { initializeApp } from 'firebase/app';
 import { getFirestore, serverTimestamp } from 'firebase/firestore';
-
+import { getAuth } from 'firebase/auth'
 const firebaseConfig = {
     apiKey: "AIzaSyASeESwKZnnl95lMRnmGDKuFcn3iD3oycg",
     authDomain: "linkedin-clone-55d5a.firebaseapp.com",
@@ -15,8 +15,11 @@ const firebaseConfig = {
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-  
-  export { db, serverTimestamp };
+  const auth = getAuth(app);
+
+  export { db, auth,serverTimestamp };
   
 
 //   export { db, auth, serverTimestamp };
+
+
