@@ -25,3 +25,50 @@
     border-radius: 50%;
     object-fit: contain;
 }
+
+@media screen and (max-width: 767px) {
+    .headerOption {
+        padding: 5px;
+    }
+
+    .headerOption__title {
+        font-size: 10px;
+    }
+
+    .headerOption__icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+   
+    .headerOption {
+        padding: 3px;
+    }
+
+    .headerOption__title {
+        font-size: 8px;
+    }
+
+    .headerOption__icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* @media screen and (max-width: 350px) {
+   
+    .headerOption {
+        padding: 2px;
+    }
+
+    .headerOption__title {
+        font-size: 8px;
+    }
+
+    .headerOption__icon {
+        width: 15px;
+        height: 15px;
+    }
+} */

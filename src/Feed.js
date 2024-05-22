@@ -29,7 +29,7 @@ function Feed() {
     try {
       await addDoc(collection(db, 'posts'), {
         name: 'Shivam Bhosale',
-        description: 'Gradstudent @ Uwindsor',
+        description: 'Machine Learning & AI Specialist | Full Stack Developer |',
         message: input,
         photoUrl: '',
         timestamp: serverTimestamp(),

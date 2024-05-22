@@ -1,3 +1,6 @@
+
+
+
 .sidebar{
     top: 80px;
     position: sticky;
@@ -5,6 +8,8 @@
     border-radius: 10px;
     text-align: center;
     height: fit-content;
+    background-color: #2c2f33; /* Dark background */
+    color: #cfd8dc; /* Light text */
 }
 
 .sidebar__avatar{
@@ -15,16 +20,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    border-bottom: 0;
-    border: 1px solid lightgray;
+    background-color: #2c2f33; /* Dark background */
+    border-bottom: 1px solid #37474f; /* Dark border */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-bottom: 10px;
 }
 
 .sidebar__top > img{
-   
     margin-bottom: -10px;
     width: 100%;
     height: 90%;
@@ -36,12 +39,15 @@
 .sidebar__top > h2{
     font-size: 18px;
     margin-top: 10px;
+    color: #cfd8dc; /* Light text */
 }
+
 .sidebar__top > h4{
     font-size: 12px;
     color: gray;
     margin-top: 5px;
 }
+
 .sidebar__stat{
     margin-top: 10px;
     display: flex;
@@ -56,7 +62,7 @@
 
 .sidebar_stats{
     padding:10px;
-    background-color: white;
+    background-color: #2c2f33; /* Dark background */
     margin-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -68,11 +74,10 @@
 }
 
 .sidebar__button{
-    
     border: none;
     border-radius: 5px;
     margin-top: 10px;
-    color: rgb(7, 7, 7);
+    color: #cfd8dc; 
     cursor: pointer;
     text-align: left;  
 }
@@ -88,8 +93,41 @@
 }
 
 .sidebar__recentItem:hover{
-    background-color: whitesmoke;
+    background-color: #37474f; 
     cursor: pointer;
-    color: black;
+    color: #cfd8dc; 
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 1023px) {
+    .sidebar {
+        flex: 0.3;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        flex: 1;
+        top: 0;
+        border-radius: 0;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .sidebar {
+        flex: 1;
+        top: 0;
+        border-radius: 0;
+    }
+}
+
+/* @media screen and (max-width: 350px) {
+    .sidebar {
+        flex: 1;
+        top: 0;
+        border-radius: 0;
+    }
+} */

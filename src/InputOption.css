@@ -16,3 +16,47 @@
 .inputOption > h4{
     margin-left: 5px;
 }
+@media screen and (max-width: 1023px) {
+    /* Tablet styles */
+    .inputOption {
+        padding: 5px;
+    }
+
+    .inputOption > h4 {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .inputOption {
+        padding: 5px;
+    }
+
+    .inputOption > h4 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+   
+    .inputOption {
+        padding: 3px;
+    }
+
+    .inputOption > h4 {
+        font-size: 12px;
+    }
+}
+
+/* @media screen and (max-width: 350px) {
+   
+    .inputOption {
+        padding: 3px;
+        width: 90%;
+    }
+
+    .inputOption > h4 {
+        font-size: 12px;
+    }
+} */
